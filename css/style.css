@@ -1,0 +1,58 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding-bottom: 30px;
+}
+
+.main-header{
+    background-color: rgba(0, 10, 0, 0.7);
+}
+
+.nav ul{
+    margin: 0em;
+}
+
+.nav li{
+    display: inline;
+}
+
+.nav a{
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 0.5em;
+}
+
+.main-nav{
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.main-footer{
+    background-color: darksalmon;
+    padding: 0.25em 0;
+}
+
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+.main-foot-container{
+    display: flex;
+    text-align: end;
+}
+
+.main-foot-container ul{
+    flex-grow: 1;
+    text-align: end;
+}
+
+.footer-nav{
+    padding: 0.5em;
+}
