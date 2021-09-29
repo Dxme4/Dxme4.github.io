@@ -1,21 +1,23 @@
 html, body{
     margin: 0;
-    padding: 0;
+}
+
+#welcome-sectio{
+    background-image: url(../images/welcomebackground.jfif);
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Blander sammen background bilde og fargen*/
     background-blend-mode: multiply;
     background-size: cover;
-    padding-bottom: 30px;
+    padding-bottom: 150px;
 }
 
-.main-header{
-    background-color: rgba(0, 10, 0, 0.7);
-}
-
-.nav ul{
+.main-nav ul{
     margin: 0em;
 }
 
 .nav li{
     display: inline;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .nav a{
@@ -25,6 +27,26 @@ html, body{
     padding: 0.5em;
 }
 
+#project{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    width: 329px;
+    
+}
+
+#project img{
+    display: block;
+    margin: 0 auto;
+}
+
+.logo{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkslategrey;
+}
+
+
 .main-nav{
     text-align: center;
     font-size: 1.3em;
@@ -32,9 +54,17 @@ html, body{
     border-bottom: 1px solid rgba(0, 0, 0, 0.4);
 }
 
+.section-div{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
 .main-footer{
     background-color: darksalmon;
     padding: 0.25em 0;
+    
 }
 
 .container{
