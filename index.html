@@ -43,10 +43,66 @@
                         <h2 class="title"> Project</h2>
                         <div class="project-content">
                             <div class="column left">
-                                <img src="/images/last ned.jfif" alt="">
+                                <img src="/images/Project.jpg" alt="">
                             </div>
                             <div class="column right">
-                                <div class="text">Skrive litt om prosjektet</div>
+                                <div class="text">Potensiometer</div>
+                                <p>Koblingsmåte </p>
+                                <p>Kode: <br> 
+                                    const int pot = A1; // arduino pin A1 or 15 <br>
+
+                                    const int led = 5; <br>
+                                    
+                                     
+                                    
+                                    int potIn; <br>
+                                    
+                                    int value; <br>
+                                    
+                                    int dutyC; <br>
+                                    
+                                    void setup() <br>
+                                    
+                                    { 
+                                    
+                                      pinMode(pot, INPUT); <br>
+                                    
+                                       
+                                    
+                                      Serial.begin(9600); <br>
+                                    
+                                    } 
+                                    
+                                     
+                                    
+                                    void loop() <br>
+                                    
+                                    { 
+                                    
+                                      potIn = analogRead(pot); <br>
+                                    
+                                      value = map(potIn, 0, 1023, 0, 255); <br>
+                                    
+                                      dutyC = map(potIn, 0, 1023, 0, 100); <br>
+                                    
+                                       
+                                    
+                                      analogWrite(led, value); <br>
+                                    
+                                       
+                                    
+                                      Serial.print("Duty Cycle: "); <br>
+                                    
+                                      Serial.print(dutyC); <br>
+                                    
+                                      Serial.println("%"); <br>
+                                    
+                                       
+                                    
+                                      delay(100); <br>
+                                    
+                                       
+                                    } </p>
                             </div>
                         </div>
                     </div>
@@ -61,8 +117,8 @@
                         <img src="/images/last ned.jfif" alt="">
                     </div>
                     <div class="column right">
-                        <div class="text">Jeg er Dimitar, og jeg er <span>student</span></div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, doloremque asperiores impedit mollitia adipisci ex a numquam vero quisquam, quae quam, hic neque? Officiis ad nemo accusantium eveniet. Aut nulla neque accusantium beatae dolorum aspernatur sunt quidem doloremque magni ab tenetur vero consequatur odit eaque dicta, sequi quam minima nihil cupiditate. Non, aliquid iste. Error ea eligendi odio aut laudantium!</p>
+                        <div class="text">Jeg er Dimitar, og jeg er <span>elev</span></div>
+                        <p>Jeg er 17 år gammel.</p>
                     </div>
                 </div>
             </div>

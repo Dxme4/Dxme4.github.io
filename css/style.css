@@ -1,10 +1,10 @@
+/* Select all elements and stylize*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
 }
-
 
 .max-width{
     max-width: 1300px;
@@ -137,7 +137,8 @@
 
 .project-tile{
     font-family: 'Poppins', sans-serif;
-    background-color: #30476b;
+    background: url("/images/projectbackground2.jpg");
+    background-size: cover;
 }
 
 .project-tile .title{
@@ -169,7 +170,7 @@
     font-size: 20px;
     color: #111;
     padding: 5px;
-    background: #30476b;
+    background: lightblue;
     transform: translateX(-50%);
 }
 .project-tile .project-content{
@@ -184,7 +185,7 @@
 }
 
 .project-tile .project-content .left img{
-    height: 400px;
+    height: 450px;
     width: 400px;
     object-fit: cover;
     border-radius: 6px;
@@ -206,16 +207,22 @@ section{
 }
 .about{
     font-family: 'Poppins', sans-serif;
+    background-color: #101430;
 }
 
 .about .title{
     position: relative;
+    color: #fff;
     text-align: center;
     font-size: 40px;
     font-weight: 500;
     margin-bottom: 60px;
     padding-bottom: 20px;
     font-family: 'Ubuntu', sans-serif;
+}
+
+.about .column{
+    color: #fff;
 }
 
 .about .title::before{
@@ -225,7 +232,7 @@ section{
     left: 50%;
     width: 180px;
     height: 3px;
-    background: #111;
+    background: #fff;
     transform: translateX(-50%);
 
 }
@@ -235,9 +242,9 @@ section{
     bottom: -13px;
     left: 50%;
     font-size: 20px;
-    color: #111;
+    color: #fff;
     padding: 5px;
-    background: #fff;
+    background: #101430;
     transform: translateX(-50%);
 
 }
@@ -272,26 +279,13 @@ section{
 }
 
 .about .about-content .right .text span{
-    color: darkblue;
+    color: lightblue;
 }
 
 .about .about-content .right .text p{
     text-align: justify;
 }
 
-/* JEG SKAL LAGE EN LAST NED PROJECT */
-/* .about .about-content .right .text a{
-    display: inline-block;
-    background: #fff;
-    color: #111;
-    font-size: 25px;
-    padding: 12px 36px;
-    margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid #fff;
-    transition: all 0.3s ease;
-    text-align: justify;
-} */
 
 .link-title{
     text-align: center;
