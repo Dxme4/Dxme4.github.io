@@ -43,73 +43,13 @@
                         <h2 class="title"> Project</h2>
                         <div class="project-content">
                             <div class="column left">
+                                <a href="project.html">
                                 <img src="/images/Project.jpg" alt="">
+                                </a>
                             </div>
                             <div class="column right">
-                                <div class="text">Potensiometer</div>
-                                <p class="koblindsmåte">Koblingsmåte: <br> <br> 
-                                Wiperen til potensiometeren blir koblet til A1 på arduinoen. <br>
-                                Pluss eller 5V på arduinoen blir koblet til venstre siden av potensiometeren, og minus til ground <br>
-                                <br>
-                                Anoden på dioden kobles til input -5 <br>
-                                Katoden kobles til 220 ohm og den andre beinen til motstanden som er koblet til jord <br>
-                                <br>
-                                </p>
-                                <p class="kode">Kode: <br> 
-                                    const int pot = A1; // arduino pin A1 or 15 <br>
-
-                                    const int led = 5; <br>
-                                    
-                                     
-                                    
-                                    int potIn; <br>
-                                    
-                                    int value; <br>
-                                    
-                                    int dutyC; <br>
-                                    
-                                    void setup() <br>
-                                    
-                                    { <br>
-                                    
-                                      pinMode(pot, INPUT); <br>
-                                    
-                                       
-                                    
-                                      Serial.begin(9600); <br>
-                                    
-                                    } <br>
-                                    
-                                     
-                                    
-                                    void loop() <br>
-                                    
-                                    { <br>
-                                    
-                                      potIn = analogRead(pot); <br>
-                                    
-                                      value = map(potIn, 0, 1023, 0, 255); <br>
-                                    
-                                      dutyC = map(potIn, 0, 1023, 0, 100); <br>
-                                    
-                                       
-                                    
-                                      analogWrite(led, value); <br>
-                                    
-                                       
-                                    
-                                      Serial.print("Duty Cycle: "); <br>
-                                    
-                                      Serial.print(dutyC); <br>
-                                    
-                                      Serial.println("%"); <br>
-                                    
-                                       
-                                    
-                                      delay(100); <br>
-                                    
-                                       
-                                    } <br> </p>
+                                <div class="text">Potensiometer med led</div>
+ 
                             </div>
                         </div>
                     </div>
@@ -121,13 +61,18 @@
                 <h2 class="title"> About me</h2>
                 <div class="about-content">
                     <div class="column left">
-                        <img src="/images/anime.jfif" alt="">
+                        <img src="/images/Dimitar.jpg" alt="">
                     </div>
                     <div class="column right">
-                        <div class="text">Jeg er Dimitar, og jeg er <span>elev</span></div>
-                        <p>Jeg er 17 år gammel. Jeg går på Kuben Videregående skole, og gå i Dataelektronikk linja
+                        <div class="text">Jeg er <span>Dimitar</span></div>
+                        <p>Jeg er 17 år gammel. Jeg går på Kuben Videregående skole, og går i Dataelektronikk linja.
                         Jeg valgte Dataelektronikk fordi jeg synes at det er ganske spennende å jobbe <br>
-                         med datamaskiner og fordi jeg liker programmering. I fritiden liker jeg å game, henge med venner, jeg liker å se på serier.
+                         med datamaskiner og fordi jeg liker programmering. I fritiden liker jeg å game, henge med venner, jeg liker å se på serier. <br> <br>
+
+                        Erfaring: <br>
+                        - Front End Development <br>
+                        - Koble elektroniske kretser <br>
+                        - Programmering av Arduino
                         </p>
                     </div>
                 </div>

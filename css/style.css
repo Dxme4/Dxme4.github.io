@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    
 }
 
 .max-width{
@@ -171,7 +172,7 @@
     font-size: 20px;
     color: #fff;
     padding: 5px;
-    background: #101430;
+    background: #111;
     transform: translateX(-50%);
 }
 .project-tile .project-content{
@@ -200,8 +201,17 @@
     color: #fff;
 }
 
+.project-tile .right .kode span{
+    font-size: 20px;
+}
+
 .project-tile .right .koblindsmåte{
     color: #fff;
+  
+}
+
+.project-tile .right .koblindsmåte span{
+    font-size: 20px;
 }
 
 .project-tile .project-content .right .text{
@@ -255,7 +265,7 @@ section{
     font-size: 20px;
     color: #fff;
     padding: 5px;
-    background: #101430;
+    background: #111;
     transform: translateX(-50%);
 
 }
