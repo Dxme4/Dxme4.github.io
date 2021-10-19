@@ -47,8 +47,15 @@
                             </div>
                             <div class="column right">
                                 <div class="text">Potensiometer</div>
-                                <p>Koblingsmåte </p>
-                                <p>Kode: <br> 
+                                <p class="koblindsmåte">Koblingsmåte: <br> <br> 
+                                Wiperen til potensiometeren blir koblet til A1 på arduinoen. <br>
+                                Pluss eller 5V på arduinoen blir koblet til venstre siden av potensiometeren, og minus til ground <br>
+                                <br>
+                                Anoden på dioden kobles til input -5 <br>
+                                Katoden kobles til 220 ohm og den andre beinen til motstanden som er koblet til jord <br>
+                                <br>
+                                </p>
+                                <p class="kode">Kode: <br> 
                                     const int pot = A1; // arduino pin A1 or 15 <br>
 
                                     const int led = 5; <br>
@@ -63,7 +70,7 @@
                                     
                                     void setup() <br>
                                     
-                                    { 
+                                    { <br>
                                     
                                       pinMode(pot, INPUT); <br>
                                     
@@ -71,13 +78,13 @@
                                     
                                       Serial.begin(9600); <br>
                                     
-                                    } 
+                                    } <br>
                                     
                                      
                                     
                                     void loop() <br>
                                     
-                                    { 
+                                    { <br>
                                     
                                       potIn = analogRead(pot); <br>
                                     
@@ -102,7 +109,7 @@
                                       delay(100); <br>
                                     
                                        
-                                    } </p>
+                                    } <br> </p>
                             </div>
                         </div>
                     </div>
@@ -114,11 +121,14 @@
                 <h2 class="title"> About me</h2>
                 <div class="about-content">
                     <div class="column left">
-                        <img src="/images/last ned.jfif" alt="">
+                        <img src="/images/anime.jfif" alt="">
                     </div>
                     <div class="column right">
                         <div class="text">Jeg er Dimitar, og jeg er <span>elev</span></div>
-                        <p>Jeg er 17 år gammel.</p>
+                        <p>Jeg er 17 år gammel. Jeg går på Kuben Videregående skole, og gå i Dataelektronikk linja
+                        Jeg valgte Dataelektronikk fordi jeg synes at det er ganske spennende å jobbe <br>
+                         med datamaskiner og fordi jeg liker programmering. I fritiden liker jeg å game, henge med venner, jeg liker å se på serier.
+                        </p>
                     </div>
                 </div>
             </div>
