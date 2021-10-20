@@ -22,78 +22,84 @@
             </div>
         </nav>
 
-        <section>
-            <div class="column right">
-                <img src="/images/Project.jpg" alt="" height="400" width="400" style="padding: 2px;">
-                <div class="text" style="font-size: 30px; font-weight: bold; color: #fff;">Potensiometer med led</div>
-                <p class="koblindsmåte" style="color: #fff; font-size: 20px; padding: 2px;" ><span> Koblingsmåte: </span><br> <br> 
-                Wiperen til potensiometeren blir koblet til A1 på arduinoen. <br>
-                Pluss eller 5V på arduinoen blir koblet til venstre siden av potensiometeren, og minus til ground <br>
-                <br>
-                Anoden på dioden kobles til input -5 <br>
-                Katoden kobles til 220 ohm og den andre beinen til motstanden som er koblet til jord <br>
-                <br>
-                </p>
-                <p class="kode" style="color: #fff; font-size: 20px; padding: 2px;"><span>Kode:</span> <br> 
-                    const int pot = A1; // arduino pin A1 or 15 <br>
+        <section class="project-tile" id="project">
+            <div class="max-width">
+                <h2 class="title"> Project </h2>
+                <div class="project-content">
+                    <div class="column left">
+                        <img src="/images/Project.jpg" alt="">
+                    </div>
+                    <div class="column right">
+                        <div class="text">Potensiometer med led</div>
+                        <p class="koblindsmåte">Koblingsmåte:<br> <br> 
+                            Wiperen til potensiometeren blir koblet til A1 på arduinoen. <br>
+                            Pluss eller 5V på arduinoen blir koblet til venstre siden av potensiometeren, og minus til ground <br>
+                            <br>
+                            Anoden på dioden kobles til input -5 <br>
+                            Katoden kobles til 220 ohm og den andre beinen til motstanden som er koblet til jord <br>
+                            <br>
+                            </p>
 
-                    const int led = 5; <br>
-                    
-                     
-                    
-                    int potIn; <br>
-                    
-                    int value; <br>
-                    
-                    int dutyC; <br>
-                    
-                    void setup() <br>
-                    
-                    { <br>
-                    
-                      pinMode(pot, INPUT); <br>
-                    
-                       
-                    
-                      Serial.begin(9600); <br>
-                    
-                    } <br>
-                    
-                     
-                    
-                    void loop() <br>
-                    
-                    { <br>
-                    
-                      potIn = analogRead(pot); <br>
-                    
-                      value = map(potIn, 0, 1023, 0, 255); <br>
-                    
-                      dutyC = map(potIn, 0, 1023, 0, 100); <br>
-                    
-                       
-                    
-                      analogWrite(led, value); <br>
-                    
-                       
-                    
-                      Serial.print("Duty Cycle: "); <br>
-                    
-                      Serial.print(dutyC); <br>
-                    
-                      Serial.println("%"); <br>
-                    
-                       
-                    
-                      delay(100); <br>
-                    
-                       
-                    } <br> </p>
-            </div>
-        </div>
-    </div>
-        </section>
+                            <p class="kode">Kode: <br> 
+                                const int pot = A1; // arduino pin A1 or 15 <br>
             
+                                const int led = 5; <br>
+                                
+                                 
+                                
+                                int potIn; <br>
+                                
+                                int value; <br>
+                                
+                                int dutyC; <br>
+                                
+                                void setup() <br>
+                                
+                                { <br>
+                                
+                                  pinMode(pot, INPUT); <br>
+                                
+                                   
+                                
+                                  Serial.begin(9600); <br>
+                                
+                                } <br>
+                                
+                                 
+                                
+                                void loop() <br>
+                                
+                                { <br>
+                                
+                                  potIn = analogRead(pot); <br>
+                                
+                                  value = map(potIn, 0, 1023, 0, 255); <br>
+                                
+                                  dutyC = map(potIn, 0, 1023, 0, 100); <br>
+                                
+                                   
+                                
+                                  analogWrite(led, value); <br>
+                                
+                                   
+                                
+                                  Serial.print("Duty Cycle: "); <br>
+                                
+                                  Serial.print(dutyC); <br>
+                                
+                                  Serial.println("%"); <br>
+                                
+                                   
+                                
+                                  delay(100); <br>
+                                
+                                   
+                                } <br> </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
             <script src="scripts\script.js"></script>
 
