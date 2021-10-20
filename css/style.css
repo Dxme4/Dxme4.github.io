@@ -4,9 +4,10 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    
+    scroll-behavior: smooth;
 }
 
+/* Maksimum bredde */
 .max-width{
     max-width: 1300px;
     padding: 0 80px;
@@ -14,7 +15,7 @@
 }
 
 /* Styling navbar */
-.navbar{
+.navbar{   /*Dette er navbar før sticky */
     position: fixed;
     width: 100%;
     z-index: 999;
@@ -23,7 +24,7 @@
     transition: all 0.3s ease;
 }
 
-.navbar.sticky{
+.navbar.sticky{ /*Dette er navbar med sticky */
     padding: 15px 0;
     background: #111;
 }
@@ -134,7 +135,6 @@
 }
 
 /* project section styling */
-
 
 .project-tile{
     font-family: 'Poppins', sans-serif;
